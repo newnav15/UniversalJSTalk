@@ -5,7 +5,7 @@ import constants from './constants';
 
 import TodoModel from './todoModel';
 
-var TodoApp = React.createClass({
+const TodoApp = React.createClass({
     getInitialState: function () {
         return {
             nowShowing: constants.ALL_TODOS,
