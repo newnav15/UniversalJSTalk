@@ -1,3 +1,9 @@
+import Storage from 'dom-storage';
+
+if (typeof localStorage === "undefined" || localStorage === null) {
+	var localStorage = new Storage(null, { strict: false });
+}
+
 exports.uuid = function () {
 	var i, random;
 	var uuid = '';

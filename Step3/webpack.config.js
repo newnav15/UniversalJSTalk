@@ -7,13 +7,16 @@ module.exports = {
     app: './app.js',
   },
   output: {
-    path: path.join(__dirname, 'static'),
+    path: path.join(__dirname, 'static', 'js'),
     filename: '[name].bundle.js',
     publicPath: '/static',
 
   },
   devServer: {
     contentBase: __dirname,
+  },
+  node: {
+    fs: "empty"
   },
   devtool: 'source-map',
   module: {
