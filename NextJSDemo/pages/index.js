@@ -1,3 +1,13 @@
+import Link from 'next/link';
+import Header from '../components/Header';
+
 export default () => (
-  <div>Hi FITC! Welcome to next.js!</div>
+  <div>
+    <Header />
+    
+    <h1>Hi FORWARDJS! Welcome to next.js!</h1>
+    <Link href="/about">
+      <a>About Page</a>
+    </Link>
+  </div>
 )
